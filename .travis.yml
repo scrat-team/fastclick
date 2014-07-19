@@ -1,23 +1,23 @@
 language: node_js
 node_js:
-  - "0.11"
+- '0.11'
 before_install:
-  - npm config set loglevel warn
+- npm config set loglevel warn
 script:
-  - node --harmony transform
+- node --harmony transform
 after_success:
-  - git config --global user.email "hincubus@gmail.com"
-  - git config --global user.name "Hinc"
-  - git remote set-url origin https://github.com/scrat-team/fastclick.git
-  - git config credential.helper "store --file=.git/credentials"
-  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  - git checkout master
-  - git add .
-  - git commit -am "[ci skip]"
-  - git push origin master
+- git config --global user.email "hincubus@gmail.com"
+- git config --global user.name "Hinc"
+- git remote set-url origin https://github.com/scrat-team/fastclick.git
+- git config credential.helper "store --file=.git/credentials"
+- echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+- git checkout master
+- git add .
+- git commit -am "[ci skip]"
+- git push origin master
 branches:
   only:
-    - master
+  - master
 env:
   global:
-    secure: HfKpvk93uXagJ1Kii9xmGMWCGMFFgu7S2LEBAoetIaYvvQ884Bz/AvD9E7dSli/O1Kegbhj1C3li/6FkbE5KnpB8SUS7P0eu+byhp25TlHb5kZUN9OWlpzkkldfnhTh1yO0o5wss1s7I4SmO0VLEhmRv8G4lfINXCeN8RX2qJQU=
+  - secure: DX7WLtIqAQZgRvjCn/csGD7Co5fhx0CjdJdZzzBhZ1ZcqTDnOeUe57tffac28k77xIdta9LmjxRKJU0Ipnsc1LGu+rnmhWVjEjNMj1/eNncspUiZ88FghgG09SXjF3Tiz2b3HI/lzmZa/R1i+YaCoejkX0xG6FZ4MqohU82ZIKg=
