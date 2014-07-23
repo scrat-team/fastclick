@@ -1,8 +1,11 @@
 'use strict';
 
+var path = require('path');
+
 module.exports = {
   orgiRepo: 'ftlabs/fastclick',
-  ref: 'master',
+  ref: 'v1.0.2',
+  target: path.resolve(__dirname, '..'),
   target: __dirname,
   name: 'fastclick',
   repo: 'scrat-team/fastclick',

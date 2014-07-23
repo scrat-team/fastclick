@@ -1,6 +1,6 @@
 {
-  "name": "scrat-component-travis",
-  "version": "0.1.0",
+  "name": "scrat-component-transformer",
+  "version": "0.1.2",
   "description": "transform a github repo into installable scrat-component",
   "private": true,
   "dependencies": {
