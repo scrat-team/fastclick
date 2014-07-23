@@ -6,7 +6,6 @@ module.exports = {
   orgiRepo: 'ftlabs/fastclick',
   ref: 'v1.0.2',
   target: path.resolve(__dirname, '..'),
-  target: __dirname,
   name: 'fastclick',
   repo: 'scrat-team/fastclick',
   description: 'a scrat-installable fork of ftlabs/fastclick',
